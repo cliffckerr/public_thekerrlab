@@ -1,0 +1,7 @@
+url: "https://thekerrlab.com"
+baseurl: ""
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
