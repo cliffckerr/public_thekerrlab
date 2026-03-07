@@ -1,0 +1,196 @@
+/* Design © 2014 by Cliff Kerr (cliff@thekerrlab.com). If you like it, you're welcome to steal it :) */
+
+body{ 
+   background:#fff; 
+   padding:0px; 
+   margin:0px; 
+   font-family:Arial, Helvetica, sans-serif; 
+   color:#000; 
+   font-size:16px; 
+   background:#fafdf3;
+   background-image:url('textbackground.png');
+}
+.center{ width:900px; margin: 0 auto;}
+a{ text-decoration:none; color:#66a;}
+a:visited{color:#448;}
+a:hover, a:focus, a:active{color:#008;}
+p{ line-height:19px;}
+
+
+/*MENU*/
+#menu_wrap{width:100%; float:left; background:#302f2f url(textbackground.png) repeat; height:55px;}
+#topmenu{width:100%; text-align:center; background:#222 url(textbackground.png) repeat;}
+.menu-header{margin:auto; padding:0; display:block;}
+#topmenu ul{ margin:0; padding:0;}
+#topmenu ul li{list-style-type:none; display:inline-block; position:relative; margin-top:0px;padding:0px 0px;}
+#topmenu li a{ font-size:18px; color:#bbf; padding:15px 15px;}
+#topmenu ul > li:hover{background: #d35c08 url(textbackground.png) repeat; color: #fff;}
+#topmenu ul > li a:visited{background: #222 url(textbackground.png) repeat;}
+#topmenu ul > li a:hover{color:#fff; display:block; background: #d35c08 url(textbackground.png) repeat;}
+#topmenu ul li a:hover{ color:#fff;}
+#menu-icon{display:none;}
+
+#bottommenu{color:#888; width:100%; font-family: 'myfonts'; float:left; text-align:center; background:#222 url(textbackground.png) repeat; font-size:13px; height:70px; }
+.menu-header{margin:auto; padding:0; display:block;}
+#bottommenu ul{ margin:0; padding:0;}
+#bottommenu ul li{list-style-type:none; display:inline-block; position:relative; margin-top:0px;}
+#bottommenu li a{ font-size:14px; color:#bbf; padding:10px 20px;}
+#bottommenu ul > li a:visited{background: #222 url(textbackground.png) repeat;}
+#bottommenu ul > li:hover{background: #f0f url(textbackground.png) repeat; color: #fff;}
+#bottommenu ul > li a:hover{color:#fff; display:block; background: #d35c08 url(textbackground.png) repeat;}
+
+#bottommenu ul li a:hover{ color:#fff;}
+
+
+body#Contact a#contactnav, body#Home a#homenav, body#Jobs a#jobsnav, body#FAQ a#faqnav, body#Links a#linksnav, body#People a#peoplenav, body#Publications a#publicationsnav, body#Presentations a#presentationsnav, body#Research a#researchnav, body#Software a#softwarenav {
+   color: #fff;
+   background: #600 url(textbackground.png) repeat;
+}
+
+
+.caption {
+	text-align: center;
+	font-size:14px; 
+	font-style:italic;
+	padding:0px 0px 30px 0px;
+	color: #222;
+}
+
+
+/*Header*/
+.logged-in #header{ margin-top:0px;}
+#header{ background:#000 repeat; width:100%; float:left; position:relative; margin-top:10px;}
+.headcenter{ width:900px; margin:0 auto;}
+
+
+/*LOGO*/
+.logo {float: left;padding-bottom: 30px; width:100%;}
+.logo h1{ margin-bottom:0px; }
+.logo h1 a{ display:block;text-align:center; color:#bbf; text-decoration:none;outline: none;}
+.desc{ text-align:center; color:#888; font-size:14px; line-height:30px;}
+
+.outer-center {float: right;right: 50%;position: relative;}
+.inner-center {float: right;right: -50%;position: relative;}
+.logo img{ margin-top:15px; margin-bottom:15px; border:none;}
+
+
+
+
+
+.mainbody
+  {
+  padding:190px 20px 20px 20px; 
+  margin-left:150px;
+  min-height:300px;
+  float:center;
+  font-family:myfonts;
+  }
+
+
+.sidebar1 {
+	position:fixed;
+	top:220px;
+	float: left;
+	width: 130px;
+	height: 270px;
+	background:#222 url(textbackground.png) repeat;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	font-family: 'myfonts';
+	color: #bbf;
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+li.nav {
+	list-style: none;  /* this removes the list marker */
+	margin-bottom: 0px; /* this creates the space between the navigation on the content below */
+}
+li.nav li {
+	border-bottom: 0px solid #666; /* this creates the button separation */
+	border-right:  0px solid #666;
+	border-left:  0px solid #666;
+}
+li.nav a { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background: #222 url(textbackground.png) repeat;
+	color: #bbf;
+}
+li.nav a:visited {
+	background: #111 url(textbackground.png) repeat;
+}
+li.nav a:hover, li.nav a:active, li.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #d35c08 url(textbackground.png) repeat;
+	color: #fff;
+}
+
+
+.jauthors {
+   color: #666;
+}
+
+.btitle {
+   font-style:italic;
+}
+
+.ctitle {
+   font-style:italic;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+.center, .headcenter{ width:90%!important; margin: 0 auto;}
+.is-sticky{ width:90%!important;}
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 499px){
+.comment-form-author input, .comment-form-email input, .comment-form-url input{width:50%}
+
+/*Layout1*/
+body .lay1 .hentry{ width:30.5%}
+.lay1 .hentry:nth-child(3), .lay1 .hentry:nth-child(6), .lay1 .hentry:nth-child(9), .lay1 .hentry:nth-child(12), .lay1 .hentry:nth-child(15), .lay1 .hentry:nth-child(18), .lay1 .hentry:nth-child(21), .lay1 .hentry:nth-child(24){ margin-right:0;}
+.lay1 .hentry:nth-child(4), .lay1 .hentry:nth-child(8), .lay1 .hentry:nth-child(12), .lay1 .hentry:nth-child(16), .lay1 .hentry:nth-child(20), .lay1 .hentry:nth-child(24){ margin-right:4%!important;}
+
+}
+
+
+
+@font-face {
+    font-family: 'myfonts';
+    src: url('http://thekerrlab.com/files/ARRUSN.TTF');
+    src: url('http://thekerrlab.com/files/ARRUSN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lay1 .block_comm a, .lay2 .block_comm a, .lay3 .block_comm a{ float: left;line-height: 9px;margin-left: -3px;padding-top: 9px;text-align: center; font-family: 'myfonts'; letter-spacing: 0.05em; font-weight: normal!important;}
+.lay1 .block_comm span, .lay2 .block_comm span, .lay3 .block_comm span{ float: left;line-height: 9px;margin-left: 3px;padding-top: 14px;text-align: center; font-family: 'myfonts'; letter-spacing: 0.05em; font-weight: normal!important;}
+	
+h1, h2, h3, h4, h5, h6, .trt_button a, #submit_msg, #submit_msg, #submit, .fourofour a, .trt_wgt_tt, #related ul li a, .logo h1 a, #slider .slider-content h2 a, .lay1 .post .postitle a, .lay1 .page .postitle a, #topmenu ul li a{ font-family: 'myfonts'; letter-spacing: 0.05em; font-weight: normal!important;}
+h1{ font-size:40px; }
+h2{font-size:24px;}
+h3{font-size:18px;}
+h4{font-size:18px;}
+h5{font-size:14px;}
+h6{font-size:12px;}
+.postitle a{font-size:20px;}	
+.single_page_post .postitle a{ font-size:24px;}
+#related .post_title, #submit_msg, #submit{font-family: 'myfonts'!important;font-size:16px!important;}
+#topmenu ul li a{font-size:18px!important;}
+
+
+#sidebar .widgets .widget ul li .znn_wgt_tt, #midrow .widgets .widget ul li .znn_wgt_tt, #footer .widgets .widget ul li .znn_wgt_tt{ font-family: 'myfonts'; letter-spacing: 0.05em; font-weight: normal!important; font-size:15px;}
+
+
+.lay1 .post_content h2 a, .lay2 .post_content h2 a{ font-size:16px!important;}
+#topmenu ul li ul li a{ font-size:14px!important;}
+#thn_welcom{font-family: 'myfonts'!important;}
+#footer .widgets .widget ul li .thn_wgt_tt, #sidebar .widgets .widget li a, .commentlist .commentmetadata, .commentlist .commentmetadata a, #newslider_home ul#tabs_home li a h4{font-family: 'myfonts'!important; font-size:16px;}

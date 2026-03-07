@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+<!--#include virtual="./header.html" -->
+
+
+
+
+<center>
+<br><br>
+<a href="http://thekerrlab.com/software.html#PYNE-NEDL">PYNE-NEDL</a> | <a href="http://thekerrlab.com/software.html#Optima">Optima</a> | <a href="http://thekerrlab.com/software.html#ASD">ASD</a>
+</center>
+
+<div style="width:100%;float:left;padding:20px 0px; text-align:justify">
+<h2 id="PYNE-NEDL"><center>PYNE-NEDL</center></h2>
+<h3><center>(Python-NEURON Network Development Language)</center></h3>
+
+<div style="width:100%;float:right;padding:0px 0px 0px 20px; text-align:center">
+<iframe width="600" height="400" src="http://www.youtube.com/embed/MJjNkAqlEOA?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="caption">Traveling waves in a spiking model (Kerr, Lytton, et al., 2014)</div>
+</div>
+
+
+PYNE-NEDL is a framework that combines <a href="http://www.python.org">Python</a> and <a href="http://neuron.yale.edu">NEURON</a> to make it easy to build large-scale spiking network simulations. Although NEURON is often considered a detailed single-cell simulator, its efficient event-handling makes it suitable for modeling networks of simple neurons as well.
+<br><br>
+So far, PYNE-NEDL has been used to create models with up to 100,000 neurons; 10,000 neurons will run in real-time using in-built parallelization methods. PYNE-NEDL also includes modules for plotting and analyzing network activity (including movies, as shown above).
+<br><br>
+PYNE-NEDL is currently under development, and as a result has limited documentation. However, the source code for a particular PYNE-NEDL model of the sensorimotor system can be downloaded <a href='http://thekerrlab.com/pynenedl/pynenedl.zip'>here</a>.
+<br><br>
+Major contributors to PYNE-NEDL's development include <a href="http://www.gchadder3.com">George Chadderdon</>, <a href="http://scholar.google.com/citations?user=CTeS-SsAAAAJ&hl=en">Sam Neymotin</a>, and <a href="http://www.neurosimlab.org/people.html">Bill Lytton</a>.
+
+<h2 id="Optima"><center>Optima</center></h2>
+<h3><center>(HIV Optimization &amp; Analysis Toolbox)</center></h3>
+
+<div style="width:100%;float:right;padding:0px 0px 0px 20px; text-align:center">
+<a href="http://thekerrlab.com/figs/optima-schematic-transparent.png" data-lightbox="software" data-title="Optima model structure  (Kerr, Wilson, et al., 2014)">
+<img src="http://thekerrlab.com/figs/optima-schematic-transparent.png" width=100%></a>
+<div class="caption">Optima model structure  (Kerr, Stuart, Wilson, et al., 2015)</div>
+</div>
+
+Optima is a cloud-based software package to support prioritization of HIV investment by determining the optimal allocation of resources and coverage levels across programs in specific HIV epidemic settings. Currently, many countries use epidemiological and program reviews to inform HIV strategies to develop budgets. In contrast, Optima uses an integrated analysis of epidemic, program and cost data to determine an optimal distribution of investment to better serve the needs of HIV and health decision-makers and planners. 
+<br><br>
+The unique feature of Optima is its optimization function. For each program area (eg., ART, prevention of mother to child transmission, condom promotion, etc.), the relationships between program cost, coverage, and outcomes are established using country-specific data. A mathematical optimization function is used to calculate the optimal allocation of resources to different program areas to maximize the reduction in new infections, deaths or Disability Adjusted Life Years (DALYs) while minimizing costs. The fully calibrated model combined with these cost-coverage outcome relationships can also generate results on epidemic dynamics, evaluation of past spending, cost-effectiveness of investments, and projected financial commitments. 
+<br><br>
+Optima incorporates a mathematical model of HIV transmission and disease progression integrated with a costing and financial analysis framework. Its structure is highly flexible and can accommodate HIV interventions and subpopulations specific to each country. Optima's only fixed aspect is its basic disease progression model, which makes it an HIV model instead of a universal epidemic model. 
+<br><br>
+Optima divides the population into subgroups, based on population type, HIV infection status, HIV diagnosis status, CD4 count, and treatment status (including untreated, first- and second-line treatment, and treatment failure). In contrast to most other HIV models, the population groups are not fixed; an unlimited number of user-defined population groups may be used, including different risk groups (e.g. sex workers, people who inject drugs) and age groups (e.g. children, young adults). 
+<br><br>
+Optima tracks the movement of people between health states. Individuals are assigned to a given population based on their dominant risk; however, parameters can be set to allow multiple transmission risks (e.g. sex workers becoming infected via injecting drug use, drug users occasionally engage in commercial sex). The user enters demographic, epidemiological, behavioral, clinical, and financial data into the model. Data entry is flexible; missing data points do not cause problems, although, the more data points, the more reliable the analysis. 
+<br><br>
+Optima was developed by the Kirby Institute (Cliff Kerr, Robyn Stuart, Andrew Shattock, Richard Gray, Sherrie Kelly, David Wilson), with input from the World Bank (Marelize Gorgens, Nicole Fraser, Markus Haacker, Emiko Masaki).
+<br><br>
+For further information, please see the <a href='http://optimamodel.com'>Optima website</a>.
+
+
+<h2 id="ASD"><center>ASD</center></h2>
+<h3><center>(Adaptive Stochastic Descent)</center></h3>
+
+<div style="width:100%;float:right;padding:0px 0px 0px 20px; text-align:center">
+<a href="http://thekerrlab.com/figs/results2.png" data-lightbox="software" data-title="Comparison of nonlinear optimization methods (Kerr &amp; Smolinksi, 2014)">
+<img src="http://thekerrlab.com/figs/results2.png" width=80%></a>
+<div class="caption">Comparison of nonlinear optimization methods (Kerr &amp; Smolinksi, 2014)</div>
+</div>
+
+When standard optimization methods fail to find a satisfactory solution for a parameter fitting problem, a tempting recourse is to adjust parameters manually. While tedious, this approach can be surprisingly powerful. 
+<br><br>
+ASD is an optimization algorithm that has been designed to emulate the essential aspects of manual parameter fitting. Specifically, it uses simple Bayesian principles to form probabilistic assumptions about (a) which parameters have the greatest effect on the objective function, and (b) optimal step sizes for each parameter. 
+<br><br>
+For a certain class of optimization problems (namely, those with approximately 5&ndash;100 scalar parameter dimensions), ASD is capable of minimizing the objective function with fewer function evaluations than classic optimization methods including simplex, gradient descent, simulated annealing, and genetic algorithms.
+<br><br>
+ASD for Matlab is available <a href='http://thekerrlab.com/asd/asd.m'>here</a>. ASD for Python is available <a href='http://thekerrlab.com/asd/asd.py'>here</a>. The ASD paper is available <a href='http://thekerrlab.com/asd/asd.pdf'>here</a>. The supplementary material is available <a href='http://thekerrlab.com/asd/asd-supplement.pdf'>here</a>. The full set of Matlab files used to generate the figures and results in that paper is available <a href='http://thekerrlab.com/asd/asd.zip'>here</a>.
+
+
+
+
+<!--#include virtual="./footer.html" -->
+</html>
+
